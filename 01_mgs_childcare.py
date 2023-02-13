@@ -29,8 +29,10 @@ def drop_off(roll):
                   "> ").lower()
     if child in roll:
         print(f"There is already a {child.capitalize()} in this roll.\n"
-              f"Please add a surname")
+              f"Please add a surname, or 'x' to exit to main menu")
         return drop_off(roll)
+    elif child == "x":
+        return roll
     else:
         roll.append(child)
         print(f"{child.capitalize()} has been added to the roll")
