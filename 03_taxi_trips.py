@@ -11,7 +11,7 @@ def calc_income(minutes):
 
 
 def new_trip(trips):
-    choice = input("Start a new trip: ").lower()
+    choice = input("Start a new trip: (y/n)").lower()
     if choice in ("yes", "y"):
         minutes = get_num("Time of trip in minutes: ")
         trips.append(minutes)
